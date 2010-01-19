@@ -44,12 +44,6 @@
  * @since      File available since Release 3.3.0
  */
 
-require_once 'PHPUnit/Util/Filter.php';
-require_once 'PHPUnit/Util/Template.php';
-require_once 'PHPUnit/Extensions/Story/ResultPrinter.php';
-
-PHPUnit_Util_Filter::addFileToFilter(__FILE__, 'PHPUNIT');
-
 /**
  * Prints stories in HTML format.
  *

@@ -43,12 +43,6 @@
  * @since      File available since Release 3.3.0
  */
 
-require_once 'PHPUnit/Util/Filter.php';
-require_once 'PHPUnit/Util/Template.php';
-require_once 'PHPUnit/Util/TestDox/ResultPrinter.php';
-
-PHPUnit_Util_Filter::addFileToFilter(__FILE__, 'PHPUNIT');
-
 /**
  * Base for Story result printers.
  *

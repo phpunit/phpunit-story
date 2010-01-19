@@ -44,12 +44,6 @@
  * @since      File available since Release 3.3.0
  */
 
-require_once 'PHPUnit/Util/Filter.php';
-require_once 'PHPUnit/Util/Template.php';
-require_once 'PHPUnit/Extensions/Story/ResultPrinter.php';
-
-PHPUnit_Util_Filter::addFileToFilter(__FILE__, 'PHPUNIT');
-
 /**
  * Prints stories in HTML format.
  *
@@ -100,7 +94,7 @@ class PHPUnit_Extensions_Story_ResultPrinter_HTML extends PHPUnit_Extensions_Sto
      */
     protected function startClass($name)
     {
-        $scenarioHeaderTemplate = new PHPUnit_Util_Template(
+        $scenarioHeaderTemplate = new Text_Template(
           $this->templatePath . 'scenario_header.html'
         );
 
@@ -152,7 +146,7 @@ class PHPUnit_Extensions_Story_ResultPrinter_HTML extends PHPUnit_Extensions_Sto
 
             $lastStepName = $currentStepName;
 
-            $stepTemplate = new PHPUnit_Util_Template(
+            $stepTemplate = new Text_Template(
               $this->templatePath . 'step.html'
             );
 
@@ -166,7 +160,7 @@ class PHPUnit_Extensions_Story_ResultPrinter_HTML extends PHPUnit_Extensions_Sto
             $stepsBuffer .= $stepTemplate->render();
         }
 
-        $scenarioTemplate = new PHPUnit_Util_Template(
+        $scenarioTemplate = new Text_Template(
           $this->templatePath . 'scenario.html'
         );
 
@@ -188,7 +182,7 @@ class PHPUnit_Extensions_Story_ResultPrinter_HTML extends PHPUnit_Extensions_Sto
      */
     protected function endRun()
     {
-        $scenariosTemplate = new PHPUnit_Util_Template(
+        $scenariosTemplate = new Text_Template(
           $this->templatePath . 'scenarios.html'
         );
 
