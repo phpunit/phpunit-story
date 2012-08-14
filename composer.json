@@ -1,0 +1,32 @@
+{
+    "name": "phpunit/phpunit-story",
+    "description": "Story extension for PHPUnit to facilitate Behaviour-Driven Development.",
+    "type": "library",
+    "keywords": [
+        "bdd"
+    ],
+    "homepage": "http://www.phpunit.de/",
+    "authors": [
+        {
+            "name": "Sebastian Bergmann",
+            "email": "sebastian@phpunit.de",
+            "homepage": "http://www.phpunit.de/"
+        }
+    ],
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.2.7",
+        "phpunit/phpunit": ">=3.6.0RC1",
+        "ext-spl": "*"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.1-dev"
+        }
+    }
+
+}
