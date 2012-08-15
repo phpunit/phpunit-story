@@ -23,7 +23,10 @@
         "bin-dir": "bin"
     },
     "autoload": {
-        "classmap": ["PHPUnit/"]
+        "psr-0": {
+            "PHPUnit_Extensions_Story_": ""
+        },
+        "files": ["PHPUnit/Extensions/Story/Autoload.php"]
     },
     "minimum-stability": "dev",
     "extra": {
