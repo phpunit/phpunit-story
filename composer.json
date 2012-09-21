@@ -24,12 +24,11 @@
     },
     "require": {
         "php": ">=5.2.7",
-        "pear-pear.phpunit.de/PHPUnit": ">=3.6.0RC1@stable",
+        "phpunit/phpunit": ">=3.6.0RC1@stable",
         "ext-spl": "*"
     },
     "autoload": {
         "files": [
-            "PHPUnit/Extensions/Story/Autoload.php"
         ]
     },
     "include-path": [
