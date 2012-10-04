@@ -16,8 +16,6 @@
             "role": "lead"
         }
     ],
-    "version": "1.0.0",
-    "time": "2011-09-05",
     "support": {
         "issues": "https://github.com/sebastianbergmann/phpunit-story/issues",
         "irc": "irc://irc.freenode.net/phpunit"
@@ -28,7 +26,8 @@
         "ext-spl": "*"
     },
     "autoload": {
-        "files": [
+        "classmap": [
+            "PHPUnit/"
         ]
     },
     "include-path": [
