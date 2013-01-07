@@ -36,8 +36,8 @@
  *
  * @package    PHPUnit
  * @subpackage Extensions_Story
- * @author     Sebastian Bergmann <sb@sebastian-bergmann.de>
- * @copyright  2002-2010 Sebastian Bergmann <sb@sebastian-bergmann.de>
+ * @author     Sebastian Bergmann <sebastian@phpunit.de>
+ * @copyright  2002-2010 Sebastian Bergmann <sebastian@phpunit.de>
  * @license    http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
  * @link       http://www.phpunit.de/
  * @since      File available since Release 1.0.0
