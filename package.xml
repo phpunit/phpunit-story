@@ -91,9 +91,6 @@
     <channel>pear.phpunit.de</channel>
     <min>3.6.0RC1</min>
    </package>
-   <extension>
-    <name>spl</name>
-   </extension>
   </required>
  </dependencies>
  <phprelease/>
