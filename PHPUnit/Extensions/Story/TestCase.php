@@ -188,7 +188,7 @@ abstract class PHPUnit_Extensions_Story_TestCase extends PHPUnit_Framework_TestC
      * @param  string $action
      * @param  array  $arguments
      */
-    abstract protected function runGiven(&$world, $action, $arguments);
+    abstract public function runGiven(&$world, $action, $arguments);
 
     /**
      * Implementation for "When" steps.
@@ -197,7 +197,7 @@ abstract class PHPUnit_Extensions_Story_TestCase extends PHPUnit_Framework_TestC
      * @param  string $action
      * @param  array  $arguments
      */
-    abstract protected function runWhen(&$world, $action, $arguments);
+    abstract public function runWhen(&$world, $action, $arguments);
 
     /**
      * Implementation for "Then" steps.
@@ -206,5 +206,5 @@ abstract class PHPUnit_Extensions_Story_TestCase extends PHPUnit_Framework_TestC
      * @param  string $action
      * @param  array  $arguments
      */
-    abstract protected function runThen(&$world, $action, $arguments);
+    abstract public function runThen(&$world, $action, $arguments);
 }
