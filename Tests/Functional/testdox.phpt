@@ -11,7 +11,7 @@ require_once 'PHPUnit/Autoload.php';
 PHPUnit_TextUI_Command::main();
 ?>
 --EXPECTF--
-PHPUnit %s by Sebastian Bergmann.
+PHPUnit %s by Sebastian Bergmann and contributors.
 
 BowlingGameSpec
  [x] Score for gutter game is 0
