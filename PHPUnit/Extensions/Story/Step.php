@@ -108,7 +108,11 @@ abstract class PHPUnit_Extensions_Story_Step
                 break;
 
                 case 1: {
-                    return $this->arguments[0];
+                    $arguments = $this->arguments[0];
+                    if (!is_scalar($arguments)) {
+                        $arguments = var_export($arguments, TRUE);
+                    }
+                    return $arguments;
                 }
                 break;
 
